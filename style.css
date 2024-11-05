@@ -1,0 +1,107 @@
+/* Đặt chung cho container sản phẩm */
+.product {
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style cho hình ảnh sản phẩm */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Badge cho phần trăm giảm giá */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FF4D4F;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Badge cho nhãn New hoặc Best Seller */
+.label-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #52C41A;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style cho tiêu đề sản phẩm */
+.product h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Style cho xếp hạng đánh giá */
+.rating-loading {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+/* Style cho mô tả giá sản phẩm */
+.product-price {
+    font-size: 16px;
+    color: #FF4D4F;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Nút mua ngay */
+.buy-now-btn {
+    display: block;
+    width: 100%;
+    background-color: #1890FF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.buy-now-btn:hover {
+    background-color: #096DD9;
+}
+
+/* Điều chỉnh cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .product {
+        margin-bottom: 20px;
+    }
+    .product h3 {
+        font-size: 16px;
+    }
+    .discount-badge, .label-badge {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
